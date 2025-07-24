@@ -30,7 +30,7 @@
       }
     </style>
   </head>
-  <body class="max-w-1440 mx-auto space-y-7 lg:space-y-30">
+  <body class="max-w-1440 mx-auto space-y-10 lg:space-y-30">
     <!-- Header Section -->
     <header
       class="px-4 pt-3 sm:pt-6 sm:px-10 lg:px-[clamp(2.5rem,-14.4231rem+26.4423vw,9.375rem)]"
@@ -429,7 +429,7 @@
           Flower & Plants Lover
         </h1>
         <ul
-          class="list-disc list-inside space-y-4 text-text-color text-sm md:text-[1.375rem] font-normal font-inter"
+          class="list-disc list-inside space-y-4 text-text-color text-sm md:text-[clamp(1.1875rem,0.726rem+0.7212vw,1.375rem)] font-normal font-inter"
         >
           <li>
             Indulge your senses with the beauty and fragrance of our fresh
@@ -449,15 +449,54 @@
         </ul>
       </div>
       <!-- Trusted Badge -->
-      <div class="hidden lg:block absolute top-[-7rem] left-125">
-        <div>
-          <img
-            class="size-72"
-            src="./src/assets/trusted-badge.png"
-            alt="Trusted badge"
-          />
-        </div>
+      <div class="hidden lg:block absolute top-[-7rem] left-[35%]">
+        <img
+          class="size-[clamp(11.25rem,-5.3654rem+25.9615vw,18rem)]"
+          src="./src/assets/trusted-badge.png"
+          alt="Trusted badge"
+        />
       </div>
+    </section>
+    <!-- Latest Deal Section -->
+    <section
+      class="px-4 sm:px-10 lg:px-[clamp(2.5rem,-14.4231rem+26.4423vw,9.375rem)] flex flex-col gap-13 sm:gap-30 pt-15"
+    >
+      <!-- header section -->
+      <header class="flex flex-col items-center max-w-222 gap-4 self-center">
+        <h2
+          class="text-center font-noto-serif font-bold text-2xl sm:text-[3.125rem] text-black"
+        >
+          Latest <span class="text-[#E95A08]">Deals</span>
+        </h2>
+        <p
+          class="text-center font-inter font-normal text-sm sm:text-[1.375rem] text-text-color"
+        >
+          Indulge your senses with the beauty and fragrance of our fresh flower
+          shop. From classic roses to exotic blooms, we offer a wide variety of
+          fresh.
+        </p>
+      </header>
+      <!-- Image Section -->
+      <section class="grid grid-cols-1 md:grid-cols-3 md:grid-rows-2 gap-7">
+        <div
+          class="bg-cover bg-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./src/assets/deal-bloom.png')] rounded-2xl flex flex-col justify-center items-center min-h-50"
+        >
+          <p class="text-white font-bold font-noto-serif text-xl">25% Off | Zabo Plant</p>
+          <a class="text-white font-semibold font-inter text-base underline" href="">Shop Now</a>
+        </div>
+        <div
+          class="bg-cover bg-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./src/assets/deal-ana.png')] rounded-2xl flex justify-center flex-col items-center min-h-50 md:row-start-2"
+        >
+          <p class="text-white font-bold font-noto-serif text-xl">25% Off | Zabo Plant</p>
+          <a class="text-white font-semibold font-inter text-base underline" href="">Shop Now</a>
+        </div>
+        <div
+          class="bg-cover bg-center bg-[linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('./src/assets/deal-zabo.png')] rounded-2xl flex flex-col justify-center items-center min-h-50 md:row-start-1 md:row-span-2 md:col-start-2 md:col-span-2"
+        >
+          <p class="text-white font-bold font-noto-serif text-xl md:text-[2.5rem]">25% Off | Zabo Plant</p>
+          <a class="text-white font-semibold font-inter text-base md:text-[1.75rem] underline" href="">Shop Now</a>
+        </div>
+      </section>
     </section>
   </body>
 </html>
